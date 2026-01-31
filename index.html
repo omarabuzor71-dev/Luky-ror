@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lucky Path</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="login" id="loginBox">
+<h1>👑 Lucky Path</h1>
+<input id="usernameInput" placeholder="اسم المستخدم">
+<button onclick="login()">دخول</button>
+</div>
+
+<div class="app hidden" id="appBox">
+<h1>🎰 Lucky Path</h1>
+<div class="stats">
+<span id="username"></span>
+<span>💰 <b id="coins">0</b></span>
+<span>⭐ <b id="level">1</b></span>
+<span>👑 <b id="vip">Normal</b></span>
+</div>
+
+<p id="message">اضغط جرّب حظك</p>
+<button id="playBtn">جرّب</button>
+<button id="cashoutBtn" disabled>اقبض</button>
+
+<div class="shop">
+<h3>💳 شراء عبر سيرياتيل كاش</h3>
+<button onclick="requestPayment(500)">500 كوين</button>
+<button onclick="requestPayment(2000)">2000 كوين</button>
+</div>
+<button onclick="logout()">تسجيل خروج</button>
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
