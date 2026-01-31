@@ -1,0 +1,4 @@
+body{background:#000;color:gold;font-family:tahoma;text-align:center}
+.hidden{display:none}
+button{padding:10px;margin:5px;border-radius:8px}
+.app,.login{background:#111;padding:20px;border-radius:15px;margin:auto;max-width:400px}
